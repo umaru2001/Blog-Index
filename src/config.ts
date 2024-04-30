@@ -39,10 +39,10 @@ const WEBSITE_SORTS: WebsiteSort[] = [
     title: "友情链接",
     sites: [
       {
-        title: "EsunR Blog",
-        description: "EsunR 的博客",
-        url: "https://www.esunr.xyz",
-        icon: "https://esunr-image-bed.oss-cn-beijing.aliyuncs.com/logo.jpg",
+        title: "海祇岛的珊瑚森林",
+        description: "海星来来的博客",
+        url: "https://blog.pengdonglai.com",
+        icon: "https://blog.pengdonglai.com/medias/avatar.webp",
       },
     ],
   },
@@ -59,15 +59,15 @@ const GLOBAL_CONFIG = {
   /**
    * 个人博客链接
    */
-  BLOG_URL: "https://blog.esunr.xyz",
+  BLOG_URL: "https://blog.pengdonglai.com",
   /**
    * 指定中心 LOGO 图片地址
    */
-  LOGO_URL: null,
+  LOGO_URL: "https://blog.pengdonglai.com/medias/avatar.webp",
   /**
    * 个人 Github 链接
    */
-  GITHUB_URL: "https://github.com/EsunR",
+  GITHUB_URL: "https://github.com/umaru2001",
   /**
    * 背景图片地址
    */
@@ -75,8 +75,8 @@ const GLOBAL_CONFIG = {
   /**
    * ICP 备案号，留空不显示
    */
-  ICP: "京ICP证000001号",
-  ICP_URL: "https://beian.miit.gov.cn/",
+  // ICP: "京ICP证000001号",
+  // ICP_URL: "https://beian.miit.gov.cn/",
   FOOTER_INFO: true,
   /**
    * 网站欢迎标语
