@@ -1685,7 +1685,7 @@ const GLOBAL_CONFIG = {
   /**
    * 背景图片地址
    */
-  BACKGROUND_IMG_URL: "https://www.pengdonglai.com/medias/banner/4.webp",
+  BACKGROUND_IMG_URL: "https://blog.pengdonglai.com/medias/banner/4.webp",
   /**
    * ICP 备案号，留空不显示
    */
