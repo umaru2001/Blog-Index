@@ -106,7 +106,6 @@ function onDrawerClick(e: Event) {
     overflow: hidden;
 
     @media screen and (min-width: 768px) {
-      max-width: 1200px;
       width: 90vw;
       bottom: 3rem;
       transform: translate(-50%, calc(100% + 3rem));

@@ -164,7 +164,7 @@ onMounted(() => {
       width: calc(100% - 1.2rem);
     }
     .tabs__content {
-      height: 60vh;
+      height: 75vh;
 
       .tab-panel {
         display: grid;
