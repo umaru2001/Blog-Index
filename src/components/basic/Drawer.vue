@@ -63,9 +63,12 @@ function onDrawerClick(e: Event) {
           <slot></slot>
         </div>
         <div class="drawer__footer">
-          <sketch-outlined class="footer-icon" />
           <a href="https://github.com/EsunR/Blog-Index" target="_blank">
-            Driven by <b>EsunR/Blog-Index</b>
+            UI Powered by <b>EsunR</b>
+          </a>
+          <span>&nbsp;|&nbsp;</span>
+          <a href="https://ntr.best/" target="_blank">
+            Links forked from <b>Jitsu</b>
           </a>
         </div>
       </div>
@@ -90,9 +93,13 @@ function onDrawerClick(e: Event) {
     transition: transform ease 0.5s;
     transform: translate(-50%, calc(100% + 0.5rem));
     z-index: 100;
-    background-color: #f1f1f1;
+    background-color: #F8D090;
+    .dark-mode & {
+      background-color: #333333;
+    }
     width: calc(100vw - 1rem);
     box-sizing: border-box;
+    box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07), 0 2px 5px -5px rgba(0, 0, 0, .1);
     border-radius: var(--regular-border-radius);
     display: flex;
     flex-direction: column;

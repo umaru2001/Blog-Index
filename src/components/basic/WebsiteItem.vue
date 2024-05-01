@@ -11,24 +11,29 @@ defineProps<{
 <template>
   <a :href="item.url" target="_blank" class="website-item">
     <div class="website-item__info">
+      <div
+        class="website-item__logo"
+        :style="{
+          backgroundColor: item.color || (item.icon ? undefined : '#bcbcbc'),
+        }"
+      >
+        <img
+          v-if="item.icon"
+          class="site-logo"
+          :src="item.icon"
+          :alt="item.title"
+        />
+        <span v-else class="site-default-logo">{{
+          item.title.slice(0, 1)
+        }}</span>
+      </div>
       <div class="title">{{ item.title }}</div>
+    </div>
+
+    <div class="website-item__info">
       <div class="description">
         {{ item.description || `网站链接: ${item.url}` }}
       </div>
-    </div>
-    <div
-      class="website-item__logo"
-      :style="{
-        backgroundColor: item.color || (item.icon ? undefined : '#bcbcbc'),
-      }"
-    >
-      <img
-        v-if="item.icon"
-        class="site-logo"
-        :src="item.icon"
-        :alt="item.title"
-      />
-      <span v-else class="site-default-logo">{{ item.title.slice(0, 1) }}</span>
     </div>
   </a>
 </template>
@@ -37,22 +42,28 @@ defineProps<{
 $text-line-height: 1.4rem;
 
 .website-item {
-  background-color: #ffffff;
-  padding: 0.5rem;
+  background-color: #f8dea9;
+  .dark-mode & {
+    background-color: #404040;
+  }
+  padding: 0.7rem;
   border-radius: var(--regular-border-radius);
   overflow: hidden;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   min-height: calc(
     $text-line-height + var(--super-mini-gap) + $text-line-height * 2
   );
   cursor: pointer;
   transition: all 0.2s ease;
-  border: 1px solid #ffffff;
 
   @media (any-hover: hover) {
     &:hover {
-      border: 1px solid var(--secondary-text-color);
+      background-color: #ffdd98;
+      .dark-mode & {
+        background-color: #454545;
+      }
     }
   }
 
@@ -63,11 +74,11 @@ $text-line-height: 1.4rem;
   }
 
   &__info {
-    flex: 1;
+    display: flex;
+    align-items: center;
     overflow: hidden;
     margin-right: 0.4rem;
     .title {
-      margin-bottom: var(--super-mini-gap);
       // 文本最多一行
       overflow: hidden;
       text-overflow: ellipsis;
@@ -85,14 +96,18 @@ $text-line-height: 1.4rem;
       -webkit-box-orient: vertical;
       line-height: $text-line-height;
       height: $text-line-height * 2;
+      margin-top: var(--super-mini-gap);
     }
   }
 
   &__logo {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 1.1rem;
+    height: 1.1rem;
     border-radius: 100%;
     position: relative;
+    margin-right: 0.4rem;
+    display: flex;
+    align-items: center;
     .site-logo {
       width: 100%;
       height: 100%;

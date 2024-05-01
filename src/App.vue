@@ -6,6 +6,7 @@ import BanTouchMask from "@/components/BanTouchMask.vue";
 import CenterLogo from "@/components/CenterLogo.vue";
 import GithubBadge from "@/components/GithubBadge.vue";
 import ICP from "@/components/ICP.vue";
+import DarkmodeButton from "@/components/DarkmodeButton.vue";
 import WebsiteDrawer from "./components/WebsiteDrawer.vue";
 import useMobileVhCssVar from "@/hooks/useMobileVhCssVar";
 
@@ -50,6 +51,8 @@ useHead({
   <div id="main-view">
     <!-- 遮罩：防止用户在动画播放期间点击屏幕 -->
     <BanTouchMask :touchable="animationEnd" />
+
+    <DarkmodeButton />
 
     <!-- github 徽标 -->
     <GithubBadge />

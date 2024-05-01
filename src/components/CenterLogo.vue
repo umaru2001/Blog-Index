@@ -76,7 +76,7 @@ onMounted(() => {
       />
       <div :class="['hello', { hello_bottom: touchable }]">
         <div>{{ slogan }}</div>
-        <div class="hello_bottom_text">点击以访问 {{ $config.BLOG_NAME }}</div>
+        <div class="hello_bottom_text">点击访问博客 {{ $config.BLOG_NAME }}</div>
       </div>
     </div>
   </div>
@@ -85,6 +85,7 @@ onMounted(() => {
 <style lang="scss" scoped>
 .logo-area {
   background-size: cover !important;
+  color: #8F82BC;
   background-position: center !important;
   overflow: hidden;
   align-items: center;
@@ -102,7 +103,13 @@ onMounted(() => {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: #fda085;
+    background: radial-gradient(circle, transparent 20%, #f8dea9 20%, #f8dea9 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #f8dea9 20%, #f8dea9 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#FAEBD7 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #FAEBD7 8px, transparent 8px) -4px 0;
+    background-color: #f8dea9;
+    background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+    .dark-mode & {
+      background: radial-gradient(circle, transparent 20%, #1f2122 20%, #1f2122 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #1f2122 20%, #1f2122 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#333333 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #333333 8px, transparent 8px) -4px 0;
+      background-color: #1f2122;
+    }
     overflow: hidden;
     transition: background-color 0.5s;
     border-radius: 100%;
@@ -110,12 +117,16 @@ onMounted(() => {
     animation-fill-mode: forwards;
   }
   .img-shadow-show {
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    .dark-mode & {
+      background: rgba(0, 0, 0, 0.8);
+    }
   }
   .inner {
     position: relative;
     .main-logo {
       height: 7rem;
+      border-radius: 50%;
       position: absolute;
       transform: translate(-50%, -50%);
       transition: all 1s;

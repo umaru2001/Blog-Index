@@ -3,11 +3,11 @@ body {
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
-  color: #303030;
+  color: #8F82BC;
 
   // variables
-  --regular-text-color: #303030;
-  --secondary-text-color: #757575;
+  --regular-text-color: #8F82BC;
+  --secondary-text-color: #666666;
 
   --regular-font-size: 1rem;
   --small-font-size: 0.8rem;
@@ -20,6 +20,21 @@ body {
   --regular-border-radius: 0.5rem;
 
   --regular-shadow: 0 0rem 0.6rem rgba(0, 0, 0, 0.15);
+}
+
+html {
+  background: radial-gradient(circle, transparent 20%, #1f2122 20%, #1f2122 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #1f2122 20%, #1f2122 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#333333 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #333333 8px, transparent 8px) -4px 0;
+  background-color: #1f2122;
+  background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
+
+body.dark-mode {
+  color: #F8D090;
+  background-color: black;
+
+  // variables
+  --regular-text-color: #F8D090;
+  --secondary-text-color: #808080;
 }
 
 a {
