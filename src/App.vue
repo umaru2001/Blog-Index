@@ -23,6 +23,10 @@ useMobileVhCssVar();
 onMounted(() => {
   setTimeout(() => {
     animationEnd.value = true;
+    const urlParams = new URLSearchParams(window.location.search)
+    if (urlParams.get('show_drawer') === 'true') {
+      drawerVisible.value = true
+    }
   }, 1300);
 });
 
