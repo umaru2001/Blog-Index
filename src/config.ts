@@ -11,9 +11,21 @@ const WEBSITE_SORTS: WebsiteSort[] = [
       },
       {
         title: "个人搭建图床",
-        description: "设置了CF权限，暂时只能个人上传",
+        description: "设置了CF权限，暂时只能博主本人上传",
         url: "https://starfishdl.site/uploadpage",
         icon: "https://blog.pengdonglai.com/medias/avatar.webp",
+      },
+      {
+        title: "CloudFlare",
+        description: "真正的赛博菩萨1号",
+        url: "https://dash.cloudflare.com/",
+        icon: "https://dash.cloudflare.com/favicon.ico",
+      },
+      {
+        title: "Vercel",
+        description: "真正的赛博菩萨2号",
+        url: "https://vercel.com/",
+        icon: "https://vercel.com/favicon.ico",
       },
     ],
   },
@@ -24,7 +36,7 @@ const WEBSITE_SORTS: WebsiteSort[] = [
         "title": "girigiri爱动漫",
         "url": "https://anime.girigirilove.com/",
         "icon": "//favicon.rss.ink/v1/aHR0cHM6Ly9hbmltZS5naXJpZ2lyaWxvdmUuY29t",
-        "description": "作者很懒，没有填写描述。"
+        "description": "大陆区域IP会显示403"
       },
       {
         "title": "茶杯狐",
@@ -42,7 +54,7 @@ const WEBSITE_SORTS: WebsiteSort[] = [
         "title": "NyaFun",
         "url": "https://www.nyafun.net/",
         "icon": "//favicon.rss.ink/v1/aHR0cHM6Ly93d3cubnlhZnVuLm5ldA==",
-        "description": "作者很懒，没有填写描述。"
+        "description": "网站处于维护状态中。"
       },
       {
         "title": "次元城动漫",
@@ -82,9 +94,9 @@ const WEBSITE_SORTS: WebsiteSort[] = [
       },
       {
         "title": "樱花动漫",
-        "url": "http://www.dm99.me/",
+        "url": "https://www.dm539.com/",
         "icon": "//favicon.rss.ink/v1/aHR0cDovL3d3dy5kbTk5Lm1l",
-        "description": "作者很懒，没有填写描述。"
+        "description": "只能说叫樱花动漫的网站太多了。"
       },
       {
         "title": "OmoFun",
@@ -982,8 +994,20 @@ const WEBSITE_SORTS: WebsiteSort[] = [
     ],
   },
   {
-    title: "友情链接",
+    title: "机场",
     sites: [
+      {
+        "title": "起飞机场",
+        "url": "https://www.qifeijiasuapp.com/zh-hans",
+        "icon": "https://www.qifeijiasuapp.com/sites/vpn1_qifei/files/inline-images/logo-cn-vpnweb.png",
+        "description": "免费，效果还可以。"
+      },
+      {
+        "title": "RabbitPro",
+        "url": "https://rabbitpro.net/",
+        "icon": "https://rabbitpro.net/favicon.ico",
+        "description": "一直在用，感觉不太会跑路，有点贵。"
+      },
       {
         "title": "品云机场导航",
         "url": "https://52.mk/",
@@ -1195,7 +1219,7 @@ const WEBSITE_SORTS: WebsiteSort[] = [
     ],
   },
   {
-    title: "图片托管",
+    title: "文件托管",
     sites: [
       {
         "title": "Streamja",
@@ -1245,16 +1269,22 @@ const WEBSITE_SORTS: WebsiteSort[] = [
     title: "硬件天梯",
     sites: [
       {
+        "title": "移动芯片排行",
+        "url": "https://www.socpk.com/",
+        "icon": "https://www.socpk.com/favicon.ico",
+        "description":  "来自极客湾的测评"
+      },
+      {
         "title": "显卡天梯图",
         "url": "https://tools.miku.ac/gpu_rank/",
         "icon": "//favicon.rss.ink/v1/aHR0cHM6Ly90b29scy5taWt1LmFj",
-        "description": "作者很懒，没有填写描述。"
+        "description":  "来自 MikuTools 的测评"
       },
       {
         "title": "CPU 天梯图",
         "url": "https://tools.miku.ac/cpu_rank/",
         "icon": "//favicon.rss.ink/v1/aHR0cHM6Ly90b29scy5taWt1LmFj",
-        "description": "作者很懒，没有填写描述。"
+        "description": "来自 MikuTools 的测评"
       },
       {
         "title": "手机CPU性能天梯图",
