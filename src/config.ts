@@ -39,6 +39,12 @@ const WEBSITE_SORTS: WebsiteSort[] = [
         url: "https://blog.pengdonglai.com/2024/05/04/convert-json2interface/",
         icon: "https://blog.pengdonglai.com/medias/avatar.webp",
       },
+      {
+        title: "海星来来的文档站",
+        description: "海星来来的文档站",
+        url: "https://docs.starfishdl.site/",
+        icon: "https://blog.pengdonglai.com/medias/avatar.webp",
+      },
     ],
   },
   {
