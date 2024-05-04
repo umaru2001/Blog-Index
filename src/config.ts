@@ -27,6 +27,12 @@ const WEBSITE_SORTS: WebsiteSort[] = [
         url: "https://vercel.com/",
         icon: "https://vercel.com/favicon.ico",
       },
+      {
+        title: "图床数据库插入 SQL 生成",
+        description: "可以生成访问图床的链接，并且将它转化为 SQL",
+        url: "https://blog.pengdonglai.com/2024/05/04/generate-img-insert-sql/",
+        icon: "https://blog.pengdonglai.com/medias/avatar.webp",
+      },
     ],
   },
   {
