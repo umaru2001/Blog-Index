@@ -1009,6 +1009,17 @@ const WEBSITE_SORTS: WebsiteSort[] = [
     title: "机场",
     sites: [
       {
+        "title": "tutucloud",
+        "url": "https://congyu.moe/",
+        "icon": "发布站点：https://cn.congyu.org/favicon.svg",
+        "description": "moe 被墙。发布站点：https://cn.congyu.org/，防止失联。机场主好像是柚子厨。"
+      },
+      {
+        "title": "tutucloud",
+        "url": "https://qiang.tutucloud.shop/",
+        "description": "速度很快，比较便宜并且支持不现实流量。"
+      },
+      {
         "title": "起飞机场",
         "url": "https://www.qifeijiasuapp.com/zh-hans",
         "icon": "https://www.qifeijiasuapp.com/sites/vpn1_qifei/files/inline-images/logo-cn-vpnweb.png",
