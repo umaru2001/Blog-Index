@@ -1009,7 +1009,7 @@ const WEBSITE_SORTS: WebsiteSort[] = [
     title: "机场",
     sites: [
       {
-        "title": "tutucloud",
+        "title": "丛雨 VPN",
         "url": "https://congyu.moe/",
         "icon": "发布站点：https://cn.congyu.org/favicon.svg",
         "description": "moe 被墙。发布站点：https://cn.congyu.org/，防止失联。机场主好像是柚子厨。"
