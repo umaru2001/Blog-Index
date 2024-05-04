@@ -1017,7 +1017,7 @@ const WEBSITE_SORTS: WebsiteSort[] = [
       {
         "title": "tutucloud",
         "url": "https://qiang.tutucloud.shop/",
-        "description": "速度很快，比较便宜并且支持不现实流量。"
+        "description": "速度很快，比较便宜并且支持不限时流量。"
       },
       {
         "title": "起飞机场",
