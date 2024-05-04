@@ -33,6 +33,12 @@ const WEBSITE_SORTS: WebsiteSort[] = [
         url: "https://blog.pengdonglai.com/2024/05/04/generate-img-insert-sql/",
         icon: "https://blog.pengdonglai.com/medias/avatar.webp",
       },
+      {
+        title: "JSON 转 Interface",
+        description: "JSON 转 Interface",
+        url: "https://blog.pengdonglai.com/2024/05/04/convert-json2interface/",
+        icon: "https://blog.pengdonglai.com/medias/avatar.webp",
+      },
     ],
   },
   {
