@@ -113,7 +113,7 @@ function onDrawerClick(e: Event) {
 
     &.is-opened {
       transform: translate(-50%, 0);
-      max-height: calc(100vh - 70px);
+      max-height: calc(90vh - 70px);
     }
   }
 
