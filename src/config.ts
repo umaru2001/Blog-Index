@@ -57,6 +57,10 @@ const WEBSITE_SORTS: WebsiteSort[] = [
         icon: "https://blog.pengdonglai.com/medias/avatar.webp",
       },
     ]
+  },
+  {
+    title: "友链",
+    sites: []
   }
 ];
 
